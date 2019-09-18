@@ -5,17 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Step 1: Say hello to Anton
+    - name: Step 1 - Say hello to Anton
       id: hello
       uses: adouglas-ics/hello-world-docker-action@v1.3
       with:
         who-to-greet: 'Anton Doogla'
-    - name: Step 2: There is no Step 2
+    - name: Step 2 - There is no Step 2
       id: hello2
       uses: adouglas-ics/hello-world-docker-action@v1.3
       with:
         who-to-greet: 'Step 2'
-    - name: Step 3: Say Hello To Roger
+    - name: Step 3 - Say Hello To Roger
       id: hello3
       uses: adouglas-ics/hello-world-docker-action@v1.3
       with:
