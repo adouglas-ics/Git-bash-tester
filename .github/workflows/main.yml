@@ -7,9 +7,14 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: adouglas-ics/hello-world-docker-action@v1.1
+      uses: adouglas-ics/hello-world-docker-action@v1.2
       with:
         who-to-greet: 'Anton Doogla'
+    - name: Hello world action step 2
+      id: hello2
+      uses: adouglas-ics/hello-world-docker-action@v1.2
+      with:
+        who-to-greet2: 'Roger Federer'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
