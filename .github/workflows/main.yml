@@ -6,13 +6,13 @@ jobs:
     name: A job to say hello
     steps:
     - name: Step 1 - Add 43 and 34
-      id: hello
-      uses: adouglas-ics/add-two-numbers-docker-action@v1.3
+      id: addition
+      uses: adouglas-ics/add-two-numbers-docker-action@v1.4
       with:
         number-to-add-1: 43
         number-to-add-2: 34
     - name: Step 2 - Say hello
-      id: hello2
+      id: hello
       uses: adouglas-ics/hello-world-docker-action@v1.3
       with:
         who-to-greet: 'Anthony'
