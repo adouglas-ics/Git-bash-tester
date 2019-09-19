@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Step 1 - Add 43 and 34
       id: addition
-      uses: adouglas-ics/add-two-numbers-docker-action@v1.6
+      uses: adouglas-ics/add-two-numbers-docker-action@v1.7
       with:
         number-to-add-1: 43
         number-to-add-2: 34
