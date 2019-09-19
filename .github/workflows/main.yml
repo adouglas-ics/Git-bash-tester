@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Step 1 - Add 43 and 34
+    - name: Step 1 - Add ${{ steps.hello.inputs.number-to-add-1}} and ${{ steps.hello.inputs.number-to-add-2}}
       id: addition
-      uses: adouglas-ics/add-two-numbers-docker-action@v1.7
+      uses: adouglas-ics/add-two-numbers-docker-action@v1.8
       with:
-        number-to-add-1: 43
-        number-to-add-2: 34
+        number-to-add-1: 51
+        number-to-add-2: 15
     - name: Step 2 - Say hello
       id: hello
       uses: adouglas-ics/hello-world-docker-action@v1.3
